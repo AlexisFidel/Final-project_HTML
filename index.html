@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezzaluna</title>
+    <style>
+        /* styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4e1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header */
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* menu */
+        #menu {
+            text-align: center;
+            padding: 20px;
+        }
+
+        article {
+            display: inline-block;
+            width: 250px;
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Form */
+        #order-form {
+            background: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #c0392b;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #e74c3c;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <img id="header-img" src="images/Mezzaluna-Knives.jpg" alt="Mezzaluna Restaurant Logo" width="100">
+    <h1>Mezzaluna</h1>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Place your order</a>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <article>
+      <h3>Fugazzeta</h3>
+      <img src="images/fugazzeta.jpg" alt="Fugazzeta Pizza with melted cheese and onions">
+      <p>A stuffed pizza filled with mozzarella and onions, a true Argentine classic.<br>
+        <em>Price: $5</em>
+      </p>
+    </article>
+    <article>
+      <h3>Napolitana</h3>
+      <img src="https://th.bing.com/th/id/OIP.nWai8uWWxr3dg4EfxaHplQHaE7?rs=1&pid=ImgDetMain" alt="Napolitana Pizza with tomato slices and oregano">
+      <p>Thin-crust pizza with fresh tomato slices, garlic, and oregano.<br>
+        <em>Price: $5</em>
+      </p>
+    </article>
+    <article>
+      <h3>Muzzarela</h3>
+      <img src="images/muzza.jpg" alt="Muzzarela Pizza with melted mozzarella cheese">
+      <p>The simplest yet most delicious mozzarella pizza with a crispy crust.<br>
+        <em>Price: $5</em>
+      </p>
+    </article>
+  </section>
+
+  <section id="order-form">
+    <h2>Place your order</h2>
+    <form action="checkout.html" method="GET">
+      <label for="pizza-type">Select your pizza:</label>
+      <select id="pizza-type" name="pizza-type">
+        <option value="fugazzeta">Fugazzeta - $5</option>
+        <option value="napolitana">Napolitana - $5</option>
+        <option value="muzzarela">Muzzarela - $5</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity">
+
+      <fieldset>
+        <legend>Extras</legend>
+        <input type="checkbox" id="extra-cheese" name="extra-cheese">
+        <label for="extra-cheese">Extra cheese</label><br>
+
+        <input type="checkbox" id="extra-olives" name="extra-olives">
+        <label for="extra-olives">Extra olives</label><br>
+
+        <input type="checkbox" id="spicy" name="spicy">
+        <label for="spicy">Spicy</label>
+      </fieldset>
+
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special requests?"></textarea>
+
+      <button type="submit">Go to checkout</button> 
+    </form>
+  </section>
+
+  <footer>Made with love by [Ale]</footer>
+</body>
+</html>
+<!-- This was an incredible experience! Thank you for creating Codédex. -->
+<!-- I truly enjoyed it and hope you did as well.  
+P.S.: The website's style was designed with the help of Copilot in VS Code. -->
+<!-- Warm regards from Argentina. -->
+
+
